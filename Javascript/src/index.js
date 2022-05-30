@@ -15,7 +15,7 @@ function main() {
     */
     const app = App();
 
-    /** Calls the @Listener class to expose the port. */
+    /** Calls the @Listener function to expose the port. */
     app.then(async function Listener() {
         console.clear()
         await Port(port)
