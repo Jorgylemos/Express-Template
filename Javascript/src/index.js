@@ -1,13 +1,13 @@
 /** Good coding my friend :) ! */
 
 /** @Librarys import. */
-import Dotenv from 'dotenv';
+//...
 
 /** Import files. */
-import App, { Port } from './App';
+const { App, Port } = require('./App');
 
 /** @dotenv global config. */
-Dotenv.config();
+require('dotenv').config();
 
 function main() {
     /** @Create a new app object. 
@@ -19,7 +19,7 @@ function main() {
     app.then(async function Listener() {
         console.clear()
         await Port(port)
-    }).then(() => console.log(`\x1b[32m > Node\x1b[33m 17+` + `\n` + `\x1b[32m > Local: http://localhost:${port}/` + '\n' +
+    }).then(() => console.log(`\x1b[32m > Node 17+ \x1b[33m(Javascript)` + `\n` + `\x1b[32m > Local: http://localhost:${port}/` + '\n' +
         '\n' + `\x1b[30m > [Github: \x1b[33m https://github.com/jorgylemos\x1b[30m]`))
 
     /** Creating a new @variable for introducing the port number.. */
