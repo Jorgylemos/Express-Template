@@ -14,11 +14,5 @@ $ yarn install
 $ yarn dev
 ```
 
-### To Build:
-
-```
-$ yarn build
-```
-
 ### Link:
 ```http://localhost:5000/ ```
