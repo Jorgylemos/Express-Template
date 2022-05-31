@@ -7,7 +7,12 @@ const app = express();
 async function App() {
 
     /** Put Path_Config(Variable receive express, views folder, public folder) */
-    Path_Config(app, 'ejs', '../views', '../public');
+    Path_Config({
+        $express_app: app,
+        $use_engine: 'ejs',
+        $path_view: '../views',
+        $path_public: '../public'
+    });
 
     app.get('/', (req, res) => {
         res.render('index');

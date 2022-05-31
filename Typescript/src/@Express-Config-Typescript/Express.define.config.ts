@@ -1,5 +1,17 @@
 import { DefinePath } from './Express.path.config';
 
-export async function DefineConfig($express_app: any, $user_engine: string, $path_view: string, $path_public: string) {
-    [await DefinePath($express_app, $user_engine, $path_view, $path_public)]
+interface I_Props {
+    $express_app: any,
+    $use_engine: any,
+    $path_view: any,
+    $path_public: any
+}
+
+export async function DefineConfig(props: I_Props) {
+    [await DefinePath({
+        $app: props.$express_app,
+        $engine: props.$use_engine,
+        $path_view: props.$path_view,
+        $path_public: props.$path_public
+    })]
 }
