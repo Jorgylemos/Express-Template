@@ -13,7 +13,11 @@ interface I_Props {
  *
  * Engines example: 'ejs','pug'...
  *
- * Example: Path_Config(Variable receive express, views folder, public folder)
+ * Example: Path_Config({
+            * Variable receive express,
+            * views folder,
+            * public folder
+            }); 
  *
  * @Created by Jorge Lemos
  */

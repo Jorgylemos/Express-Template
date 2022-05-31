@@ -1,12 +1,17 @@
 import express from 'express';
+const app = express();
 
 import Path_Config from './@Express-Config-Typescript'
 
-const app = express();
 
 async function App() {
 
-    /** Put Path_Config(Variable receive express, views folder, public folder) */
+    /** Put Path_Config({
+        * Variable receive express,
+        * views folder,
+        * public folder
+    }); */
+
     Path_Config({
         $express_app: app,
         $use_engine: 'ejs',
